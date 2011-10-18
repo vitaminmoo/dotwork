@@ -1,0 +1,1 @@
+omniperl.vba: call delete('/home/vitaminmoo/.vim/ftplugin/perl/omniperl.pl')|call delete('/home/vitaminmoo/.vim/ftplugin/perl/omniperl.vim')|call delete('/home/vitaminmoo/.vim/doc/omniperl.txt')
