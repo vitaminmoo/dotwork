@@ -2,6 +2,7 @@ runtime vimrc_example.vim
 
 syntax on
 set confirm
+set notitle
 
 set nobackup
 
