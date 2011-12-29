@@ -1,5 +1,11 @@
 runtime vimrc_example.vim
 
+" pathogen
+call pathogen#infect()
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
 syntax on
 set confirm
 set notitle
@@ -17,14 +23,12 @@ set formatoptions-=t
 set textwidth=0
 
 filetype on
-
 autocmd FileType c,cpp,slang set cindent
 autocmd FileType c set formatoptions+=ro
 autocmd FileType perl set smartindent
 autocmd FileType css set smartindent
 autocmd FileType html set formatoptions+=tl
 autocmd FileType make set noexpandtab shiftwidth=8
-
 
 set matchpairs+=<:>
 
@@ -40,7 +44,7 @@ inoremap <Tab> <C-T>
 inoremap <S-Tab> <C-D>
 
 set fdm=indent
-colorscheme rdark
+"colorscheme rdark
 
 " match these
 inoremap ( ()<Left>
